@@ -30,7 +30,7 @@ body{
 
 
 .main-container {
-    max-width: 1200px;
+    max-width: 1151px;
     margin: 0 auto;
     
 }
@@ -321,6 +321,9 @@ input{
     color: white;
 }
 
+.logo-i{
+    color: #0065FC;;
+}
 
 /* ICI LE BLOC DU CENTRE AVEC LES IMAGES DES HEBERGEMENT*/
 
@@ -345,7 +348,7 @@ input{
 
 
 main {   
-    width: 68%;
+    width: 67%;
     height: 487px;
     background-color: #F2F2F2;
     border-radius: 15px;
@@ -398,7 +401,7 @@ main img{
 
 
 .image-area{
-    padding: 0 61px 0 61px ;
+    padding: 0 39px ;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -411,7 +414,7 @@ main img{
 }
 
 main h4 {
-padding:18px 0px 18px 68px
+padding:18px 0px 18px 44px
 }
 
 main {
@@ -432,17 +435,17 @@ main {
 
 aside {  
     display: inline-block; 
-    width: 27%;
+    width: 28%;
     height: 487px;
     background-color: #F2F2F2;
     border-radius: 15px;
-    margin: 15px 31px 0px 0;
+    margin: 15px 0px 0px 0;
     }
 
 .aside-title{
     display: flex;
     justify-content: space-between;
-    padding: 0 53px 0 23px;
+    padding: 0 36px 0 23px;
     margin-top: 28px;
 }
 
@@ -554,6 +557,14 @@ aside {
     width: 250Px;
     height: 100%;
     margin: 0 30px 0 30px;
+}
+.image-content-tall:first-child{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px;
+    width: 250Px;
+    height: 100%;
+    margin: 0 30px 0 0px;
 }
 
 .image-content-tall img{

@@ -162,6 +162,11 @@ h2{
         flex-wrap: no-wrap;
     }
 
+.ok{
+    display: none;
+
+}
+
 .info-icon{
     width: 32px;
     height: 38px;
@@ -382,7 +387,7 @@ main img{
     
 }
 
-.image-vignet-1{
+.image-thumbnail{
     border: 4px solid white;
     background: white;
     width: 215px;
@@ -566,7 +571,6 @@ aside {
 
 .image-content-tall img{
     object-fit: cover;
-    object-position: center;
     height: 341px;
     border-radius: 20px 20px 0 0;
 }
@@ -620,12 +624,6 @@ aside {
     height: 140px;
     overflow: hidden;
 }
-
-
-
-
-
-
 
 
 
@@ -684,6 +682,17 @@ footer ul li a:hover{
 		box-sizing: border-box;
     }
 
+
+
+    .main-container{
+        height: 100%;
+        margin: 0 15PX;
+    }
+
+    .bottom-bloc{
+        width: 100%;
+    }
+
     .center-bloc{
         display: flex;
         flex-wrap: wrap;
@@ -691,29 +700,42 @@ footer ul li a:hover{
         flex-direction: column-reverse;
     }
 
-    .image-vignet-1{
-        width:17REM;
+    .image-thumbnail{
+        width:100%;
+       
     }
-    .image-vignet-1 img{
-        width:17REM;
+
+    .image-area{
+        padding: 0 70px;
     }
+    
+   
 
     aside{
         width: 100%;
         height: 50%;
-        color: red;
+        color: BLACK;
     }
 
     main{
         width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-evenly;
     }
+
+
     
  
 }
 
-@media (max-width: 930px) {
+@media (max-width: 932px) {
     .image-content-aside{
         width: 100%;
+    }
+
+    .image-content-aside img{
+        width: 40%;
     }
 
     .aside-bloc{
@@ -721,56 +743,64 @@ footer ul li a:hover{
         height: 50%;
         color: red;
         flex-direction: column;
+
     }
 
-    .image-vignet-1{
+    .image-thumbnail{
         width:23REM;
     }
-    .image-vignet-1 img{
-        width:25REM;
+    .image-thumbnail img{
+        width:100%;
     }
+
+ .image-area{
+     padding: 18px;
+
+ }
+
+
+
+    
 
 }
 
-@media (max-width: 830px) {
-    .main-container{
-        width: 500PX;
-        margin: 10px 10px 10px 10px;
-    }
-    main{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .image-vignet-1{
-        width:18REM;
-    }
-  
-    main img{
+@media (max-width: 819px) {
+    .image-thumbnail{
         width: 100%;
     }
-    .image-area{
-   width: 100%;
-    }
-
 }
 
-@media (max-width: 670px){
-.image-vignet-1{
+
+@media (max-width: 547px){
+.image-thumbnail{
     width:100%;
 }
 
-.image-vignet-1 IMG{
+
+.image-thumbnail IMG{
     width: 100%;
 }
 
 @media (max-width: 524px) {
     main{
         height: 100%;
+        margin-bottom: 200px;
+    }
+
+    .ok{
+        display: inline-block;
+    
     }
 
     main img{
         width: 100%;
     }
+    .bottom-bloc{
+    margin-top: 500px;
+    }
+    .search-text{
+        display: none;
+    }
 
+}
 }

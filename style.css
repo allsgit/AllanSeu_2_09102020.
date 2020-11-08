@@ -63,83 +63,101 @@ h2{
 }
 
 
-.menu{
+.menu > ul{
     display: flex;
     flex-wrap: wrap;
-
 }
 
+.menu > ul > li {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu > ul > li {
+    padding-top: 28px;
+    border-top: 2px solid white;
+}
+.menu > ul > li > a {
+    font-weight: 500;
+    color: black;
+}
 
+.menu > ul > li:hover {
+    border-top: 2px solid blue;
+}
+.menu > ul > li:hover > a {
+    color: #0065FC;
+}
 
+.menu > ul > li.subscribe > a {
+    color: #0065FC;
+}
 
-    /* hebergement link*/
+.menu > ul > li.active {
+    border-top: 2px solid #0065FC;
+}
+.menu > ul > li.active > a {
+    color: #0065FC;
+}
 
-.link-container-hebergement{
-        padding-top: 28px;
-        border-top: 2px solid blue;
-        color: #0065FC;
+@media (min-width: 524px) {
+    .subscribe-mobile {
+        display: none;
     }
-    
+}
 
-.link-container-hebergement:hover{
-        
+@media (max-width: 524px) {
+
+    a{
+        color:#0065FC ;
+    }
+    .menu {
+        width: 100%;
+        padding: 0;
+    }
+    .menu > ul {
+        display: flex;
+        padding: 0;
+        border-collapse: collapse;
+    }
+    .menu > ul > li {
+        flex-basis: 50%;
+        flex-grow: 1;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+    }
+    .menu > ul > li > a {
+        width: 100%;
+    }
+    .menu > ul > li {
+        border-top: none;
+        border-bottom: 2px solid lightgrey;
+    }
+    .menu > ul > li:hover {
+        border-top: none;
+    }
+    .menu > ul > li.active {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
     }
 
-.link-container-hebergement li a{
-        color: #0065FC;
-        font-weight: 500;
-        
+    .menu > ul > li.subscribe {
+        display: none;
+        color: blue;
     }
 
-.link-container-hebergement li a:hover{
-        color:  #0065FC;
+    .subscribe-mobile {
+        display: block;
+        position: absolute;
+        top: 22px;
+        right: 13px;
+        padding: 0;
+        margin: 15px;
+        font-weight: 900;
+        color: blue;
+        text-decoration: none;
     }
-
-    /* activités link */
-
-    
-.link-container-activité{
-        padding-top: 30px;
-    }
-
-.link-container-activité:hover{
-        padding-top: 28px;
-        border-top: 2px solid #0065FC;
-
-    }
-
-.link-container-activité li a{
-        color: black;
-        font-weight: 500;
-    }
-
-.link-container-activité li a:hover{
-        color:  #0065FC;
-    }
-
-    /* s'inscrire link */
-
-
-.link-container-subscribe{
-        padding-top: 30px;
-    }
-
-.link-container-subscribe:hover{
-        padding-top: 28px;
-        border-top: 2px solid #0065FC;
-
-    }
-    
-
-.link-container-subscribe li a{
-        color: #0065FC;
-        font-weight: 700;
-    }
-
-.link-container-subscribe li a:hover{
-        color:  #0065FC;
-    }
-
+}
 
 
 
@@ -518,12 +536,12 @@ aside {
 
 .bottom-bloc{
     height: 400px;
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 30px 0;
+    margin: 30px 0 100px 0;
 } 
 
 
@@ -784,14 +802,22 @@ footer ul li a:hover{
 }
 
 .image-thumbnail IMG{
-    width: 100%;
+    width: 100%
 }
 
 @media (max-width: 524px) {
 
+    * h4{
+        font-size: 1.2em;
+    }
+
     .topbar h1{
         font-size: 1.5em;
+        padding-right: 10px;
+        margin-bottom: 15px;
     }
+
+    
 
     body{
         width: 100%;
@@ -799,18 +825,39 @@ footer ul li a:hover{
     }
 
     header{
-        padding-left: 25px;
-        padding-right: 10px;
         flex-wrap: wrap;
         overflow-x: hidden;
+        margin-top: 4px;
 
     }
+
+    header > *:not(.navbar) {
+        padding-left: 25px;
+        padding-right: 10px;
+    }
+    header > .navbar > .logo {
+        padding-left: 25px;
+    }
+
     main{
         height: 100%;
+        background-color: white;
+        display: block;
     }
 
-    .main-container{
+    main h4{
 
+        padding: 0 0 0 22px;
+        font-weight: bolder;
+    }
+
+    .image-area h4{
+        padding: 0;
+        font-weight: 700;
+    }
+
+    .image-area{
+        display: block;
     }
 
     .search-mglass{
@@ -819,6 +866,7 @@ footer ul li a:hover{
 
     .searchbox{
         margin: 30px 0 15px 20px;
+        width: 80%;
     }
 
   
@@ -830,19 +878,23 @@ footer ul li a:hover{
  .filter-accesibility{
      margin-left: 10px;
  }
-    
+
+
+ .info-icon{
+    width: 40px;
+    height: 50px;
+}
 
     input{
        
 
-        width: 190PX; 
-        height: 38PX; 
-      
-       
+        width: 204PX; 
+        height: 50PX; 
     }
 
     .search-button {
         width: 46px;
+        height: 50px;
         border-radius: 10px 10px;
     }
 
@@ -850,10 +902,16 @@ footer ul li a:hover{
         width: 100%;
     }
 
+
     .bottom-bloc{
         height: 100%;
         justify-content: center;
+        margin: 0 0 20PX 0;
   
+    }
+
+    .bottom-bloc h4{
+        padding-left: 10px;
     }
 
     .image-content-tall{

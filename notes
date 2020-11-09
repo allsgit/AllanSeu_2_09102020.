@@ -1,0 +1,16 @@
+Attention à choisir le bon format d'image pour le logo... OK
+
+Desktop : 
+
+- Ajouter un Margin vertical plus conséquent autour de "En plein centre ville..." et baisser la taille de la police OK
+- Augmenter un padding horizontal plus conséquent autour de *info-icon* [Barre de recherche] OK
+- Aligner le titre "Activitées à Marseille" avec le bloc image contenant "Le vieux port"
+
+Tablette :
+
+- Revoir le positionnement du footer sur tablette
+- Revoir la width des blocs d'image
+
+Mobile :
+
+Aligner tous les éléments par rapport au logo ("Reservia")

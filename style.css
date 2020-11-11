@@ -778,7 +778,7 @@ footer ul li a:hover{
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     
@@ -788,6 +788,10 @@ footer ul li a:hover{
         flex-direction: column;
         width: 100%;
         margin: auto;
+    }
+
+    main h4 {
+        padding: 18px 0px 18px 23px;
     }
 
 

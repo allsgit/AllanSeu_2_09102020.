@@ -189,7 +189,6 @@ h2{
 
 .searchbox{
         display: flex;
-        flex-wrap: no-wrap;
         justify-content: center;
         width: 300px;
     }
@@ -356,7 +355,7 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 0.3 rem;
+    margin-right: 0.3rem;
     color: #0065FC;
 }
 
@@ -422,7 +421,6 @@ main img{
 
 .image-thumbnail{
     border: 4px solid white;
-    background: white;
     width: 215px;
     height: 162px;
     border-radius: 20px;
@@ -1284,4 +1282,4 @@ footer ul li a:hover{
 
    
     }
-}
+

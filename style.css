@@ -42,7 +42,8 @@ h2{
 
 .logo{
     margin-top: 34px;
-    color: #0065FC;;
+    color: #0065FC;
+    margin-right: 384px;
 }
 
 .logo img{
@@ -56,116 +57,107 @@ h2{
     
 }
 
-.navbar ul{
+.subscribe {
+    margin-top: 1.9rem;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+nav ul{
     list-style-type: none;
     padding-right:  15Px;  
     padding-left: 15px;                         
 }
 
-.menu ul li a{
+nav ul li a{
     padding: 20px;
 }
 
 
-.menu > ul{
+nav > ul{
     display: flex;
     flex-wrap: wrap;
 }
 
-.menu > ul > li {
+nav > ul > li {
     display: flex;
     flex-wrap: wrap;
 }
-.menu > ul > li {
+nav > ul > li {
     padding-top: 28px;
     border-top: 2px solid white;
 }
-.menu > ul > li > a {
+nav > ul > li > a {
     font-weight: 500;
     color: black;
 }
 
-.menu > ul > li:hover {
+nav > ul > li:hover {
     border-top: 2px solid blue;
 }
-.menu > ul > li:hover > a {
+nav > ul > li:hover > a {
     color: #0065FC;
 }
 
-.menu > ul > li.subscribe > a {
+.subscribe {
     color: #0065FC;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
-.menu > ul > li.active {
+nav > ul > li.active {
     border-top: 2px solid #0065FC;
 }
-.menu > ul > li.active > a {
+nav > ul > li.active > a {
     color: #0065FC;
 }
 
-.activities-mobile{
-    display: none;
-}
 
 
-@media (min-width: 524px) {
-    .subscribe-mobile {
-        display: none;
-    }
-}
+
+
 
 @media (max-width: 524px) {
 
     a{
         color:#0065FC ;
     }
-    .menu {
+    nav {
         width: 100%;
         padding: 0;
+        order: 3;
     }
-    .menu > ul {
+    nav > ul {
         display: flex;
         padding: 0;
         border-collapse: collapse;
     }
-    .menu > ul > li {
+    nav > ul > li {
         flex-basis: 50%;
         flex-grow: 1;
         width: 100%;
         text-align: center;
         padding: 0px;
     }
-    .menu > ul > li > a {
+    nav > ul > li > a {
         width: 100%;
     }
-    .menu > ul > li {
+    nav > ul > li {
         border-top: none;
         border-bottom: 2px solid lightgrey;
     }
-    .menu > ul > li:hover {
+    nav > ul > li:hover {
         border-top: none;
     }
-    .menu > ul > li.active {
+    nav > ul > li.active {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
 
-    .menu > ul > li.subscribe {
-        display: none;
-        color: blue;
-    }
 
-    .subscribe-mobile {
-        display: block;
-        position: absolute;
-        top: 22px;
-        right: 13px;
-        padding: 0;
-        margin: 15px;
-        font-weight: 900;
-        color: blue;
-        text-decoration: none;
-    }
+
 }
 
 
@@ -706,9 +698,7 @@ footer ul li a:hover{
     transition: 0.25s;
 }
 
-.bottom-bloc-mobile{
-    display: none;
-}
+
 
 
 
@@ -716,15 +706,13 @@ footer ul li a:hover{
 
     
 
-    .bottom-bloc{
-        display: none;
-    }
+
 
     .image-content-tall img{
         height: 180px
     }
 
-    .bottom-bloc-mobile{
+    .bottom-bloc{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -809,15 +797,22 @@ footer ul li a:hover{
 }
 
 @media (max-width: 1025px){
+    nav{
+        order: 3;
+    }
 
     .search-button {
         width: 160px;
 
     }
+    .subscribe{
+        margin-top: 0px;
+    }
 
 
     .logo{
         padding-left: 10px;
+        margin-right: 0;
     }
 
     .topbar{
@@ -890,9 +885,7 @@ footer ul li a:hover{
         height: 100%;
         padding: 18px 0 40px 18px;
     }
-        .activities-desktop{
-            display: none;
-        }
+    
     
         .activities-mobile{
             display: block;
@@ -902,14 +895,16 @@ footer ul li a:hover{
 
 @media (max-width: 780px)/*iphone + wide*/ {
 
-    
+    .subscribe{
+        margin-right: 92px;
+    }
 
     a{
         color:#0065FC ;
     }
 
     .logo{
-        padding-left: 10px;
+        padding-left: 19px;
     }
 
     .topbar{
@@ -932,58 +927,55 @@ footer ul li a:hover{
     .info{
         padding-left: 18px;
     }
-    .menu {
+    nav {
         width: 100%;
         padding: 0;
     }
-    .menu > ul {
+    nav > ul {
         display: flex;
         padding: 0;
         border-collapse: collapse;
     }
-    .menu > ul > li {
+    nav > ul > li {
         flex-basis: 50%;
         flex-grow: 1;
         width: 100%;
         text-align: center;
         padding: 0px;
     }
-    .menu > ul > li > a {
+    nav > ul > li > a {
         width: 100%;
     }
-    .menu > ul > li {
+    nav > ul > li {
         border-top: none;
         border-bottom: 2px solid lightgrey;
     }
-    .menu > ul > li:hover {
+    nav > ul > li:hover {
         border-top: none;
     }
-    .menu > ul > li.active {
+    nav > ul > li.active {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
 
-    .menu > ul > li.subscribe {
-        display: none;
-        color: blue;
-    }
+  .mini-wrap{
+      width: 347px;
+  }
 
-    .subscribe-mobile {
-        display: block;
-        position: absolute;
-        top: 22px;
-        right: 13px;
-        padding: 0;
-        margin: 15px;
-        font-weight: 900;
-        color: blue;
-        text-decoration: none;
-    }
+  .image-content-small-mid-1{
+      width: 347px;
+  }
+
+
 
     .image-content-tall{
-        width: 236px;
+        width: 347px;
+        order: 3;
     }
-
+    
+    .image-content-tall img{
+        height: 140px;
+    }
     .image-thumbnail{
         width: 236px;
     }
@@ -998,9 +990,15 @@ footer ul li a:hover{
     .image-content-aside > img {
         width: 300px;
     }
+
+    .bottom-bloc{
+        margin-bottom: 0px;
+    }
 }
 
 @media (max-width: 767px)/*iphone + wide*/ {
+
+    
 
 
 
@@ -1032,56 +1030,41 @@ footer ul li a:hover{
     .info{
         padding-left: 18px;
     }
-    .menu {
+    nav {
         width: 100%;
         padding: 0;
     }
-    .menu > ul {
+    nav > ul {
         display: flex;
         padding: 0;
         border-collapse: collapse;
     }
-    .menu > ul > li {
+    nav > ul > li {
         flex-basis: 50%;
         flex-grow: 1;
         width: 100%;
         text-align: center;
         padding: 0px;
     }
-    .menu > ul > li > a {
+    nav > ul > li > a {
         width: 100%;
     }
-    .menu > ul > li {
+    nav > ul > li {
         border-top: none;
         border-bottom: 2px solid lightgrey;
     }
-    .menu > ul > li:hover {
+    nav > ul > li:hover {
         border-top: none;
     }
-    .menu > ul > li.active {
+    nav > ul > li.active {
         border-top: none;
         border-bottom: 3px solid #0065FC;
     }
 
-    .menu > ul > li.subscribe {
-        display: none;
-        color: blue;
-    }
-
-    .subscribe-mobile {
-        display: block;
-        position: absolute;
-        top: 22px;
-        right: 13px;
-        padding: 0;
-        margin: 15px;
-        font-weight: 900;
-        color: blue;
-        text-decoration: none;
-    }
+ 
 
     .image-content-tall{
-        width: 208px;
+        width: 236px;
     }
 
     .image-thumbnail{
@@ -1101,6 +1084,12 @@ footer ul li a:hover{
 }
 
 @media (max-width: 414px)/* iphone 8*/ {
+
+    .subscribe{
+        position: absolute;
+    right: -65px;
+    top: 51px;
+    }
 
     .image-thumbnail{
         width: 100%;
@@ -1212,9 +1201,7 @@ footer ul li a:hover{
   
     }
 
-    .bottom-bloc h4{
-        padding-left: 21px;
-    }
+
 
     .image-content-tall{
         width: 100%;
